@@ -11,7 +11,7 @@ def main():
     if len(cep) != 8:
         print("Entre com 8 digitos de cep sem o traço")
     else:
-        dados = getCep(cep)
+        dados = get_cep(cep)
         if 'erro' in dados:
             print("CEP não encontrado!")
         else:
