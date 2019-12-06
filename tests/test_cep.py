@@ -1,4 +1,4 @@
-from src.consulta_cep import getCep
+from src.consulta_cep import get_cep
 
 def test_logradouro():
     data1 = get_cep("11015002")
