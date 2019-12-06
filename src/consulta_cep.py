@@ -1,6 +1,6 @@
 import requests
 
-def getCep(cep):
+def get_cep(cep):
     request = requests.get("https://viacep.com.br/ws/{}/json/".format(cep))
     return request.json()
 
