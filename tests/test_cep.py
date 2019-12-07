@@ -1,3 +1,4 @@
+from src.consulta_cepformatado import get_cepFormatado
 from src.consulta_cep import get_cep
 
 def test_logradouro():
@@ -15,3 +16,10 @@ def test_bairro():
 def test_cepinvalido():
     data1 = get_cep("00000000")
     assert "erro" in data1
+
+def test_enderecoformatado():
+    data1 = get_cepFormatado("01001000")
+    assert data1 == "Praça da Sé, Sé - São Paulo / SP"
+
+
+
