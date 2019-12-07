@@ -1,4 +1,4 @@
-import requests
+import requests 
 
 ''' consome  a API de https://tools.keycdn.com/geo'''
 def get_geoip(ip):
